@@ -1,6 +1,7 @@
 * {
   margin: 0;
   padding: 0;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -18,6 +19,14 @@ nav {
   top: 0;
   width: 100%;
   overflow: hidden;
+}
+
+.navbar {
+  transition: background-color 0.3s ease;
+}
+
+.scrolled {
+  background-color: #c77dff;
 }
 
 .portfolio {
@@ -43,8 +52,7 @@ ul {
 }
 
 .navigators a:hover {
-  /* color: #735CDD; */
-  color: #ff0022;
+  color: orangered;
 }
 
 .main {
@@ -154,6 +162,10 @@ ul {
   color: #231f20;
 }
 
+#email,#linkedin,#github{
+  transition: all 0.2s linear;
+}
+
 #email:hover {
   color: #c71610;
 }
@@ -212,5 +224,10 @@ textarea {
 
 #submit {
   background-color: #c77dff;
+  transition: all 0.2s linear;
   cursor: pointer;
+}
+
+#submit:hover {
+  background-color: #9d4edd;
 }
